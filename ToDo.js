@@ -1,5 +1,6 @@
 $(function () {
-	$("#add").on("click", function () {
+	$("#add").on("click", function (e) {
+	    e.preventDefault();
 		var val = $("input").val();
 		if (val !== '') {
 			var elem = $("<li></li>").text(val);
@@ -9,6 +10,6 @@ $(function () {
 			$(".rem").on("click", function () {
 				$(this).parent().remove();
 			});
-		};
+		}
 	});
 });
