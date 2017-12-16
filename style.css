@@ -15,13 +15,17 @@
 	-moz-box-shadow: 7px 7px 22px 1px rgba(0, 0, 0, 0.75);
 	box-shadow: 7px 7px 22px 1px rgba(0, 0, 0, 0.75);
 	text-align: center;
+	position: relative;
 }
 
-ol#mylist{
-    text-align: left;
+ol#mylist {
+	text-align: left;
+	padding-top: 10px;
 }
+
 .rem {
-    position: right;
+	position: absolute;
+	right: 130px;
 }
 
 h1 {
@@ -30,5 +34,20 @@ h1 {
 
 li {
 	word-wrap: break-word;
+	padding-right: 40%;
+	padding-top: 5px
 }
 
+button {
+	border-radius: 3px;
+}
+
+input {
+	border-radius: 3px;
+	padding: 3px
+}
+
+#add, #refresh {
+	width: 70px;
+	padding: 3px;
+}

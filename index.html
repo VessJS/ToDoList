@@ -8,16 +8,17 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onkeydown="return (event.keyCode != 116)"> <!--Prevent from refresh by pressing F5-->
 
-<div id = allToDo>
-	<h1>My ToDoList</h1>
-    <form action="">
-	<input type="text" placeholder="New item" />
-	<button id="add">Add</button>
-    </form>
-	<ol id="mylist"></ol>
-</div>
+	<div id="allToDo">
+		<h1>My ToDoList</h1>
+		<form action="">
+			<input type="text" placeholder="New item" />
+			<button id="add">Add</button>
+			<button id="refresh">Clear All</button>
+		</form>
+		<ol id="mylist"></ol>
+	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="ToDo.js"></script>
